@@ -31,7 +31,7 @@ export default function Africa() {
 
     // Pagination states
     const [currentPage, setCurrentPage] = useState(1);
-    const articlesPerPage = 15; // Display 9 or 12 items per page
+    const articlesPerPage = showCard ? 12 : 18; // Display 9 or 12 items per page
 
     const handleClicked = () => {
         setShowCard(!showCard);
